@@ -78,9 +78,9 @@ public class BaseVehiculos extends Sujeto {
   public List<VehiculoDescripcion> getListaVehiculos() {   
     int indice = 0;   
     List<VehiculoDescripcion> result =   
-        new ArrayList<VehiculoDescription>();   
+        new ArrayList<VehiculoDescripcion>();   
     for (Vehiculo vehiculo : vehiculos) {   
-      result.add(new VehiculoDescription(indice, vehiculo   
+      result.add(new VehiculoDescripcion(indice, vehiculo   
           .getMarca()   
           +   
           " : " + vehiculo.getModelo()));   

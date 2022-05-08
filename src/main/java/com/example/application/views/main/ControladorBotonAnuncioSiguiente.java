@@ -1,10 +1,12 @@
 package com.example.application.views.main;
 
+import java.net.http.WebSocket.Listener;
+
 import com.vaadin.flow.component.ClickEvent;
 
 public class ControladorBotonAnuncioSiguiente extends   
     Controlador implements   
-    OnClickListener, Observador {   
+    Listener, Observador {   
   private static final long serialVersionUID = 1L;   
   protected int indiceAnuncioEnCurso;   
   protected int numAnuncios;   
