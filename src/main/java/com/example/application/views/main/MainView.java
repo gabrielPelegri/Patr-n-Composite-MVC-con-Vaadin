@@ -9,8 +9,9 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
 
+
 @Route("") 
-public class MainView extends VerticalLayout { 
+public class MainView extends VerticalLayout implements Observador{ 
 
   public MainView() {
     VerticalLayout todosList = new VerticalLayout(); 
