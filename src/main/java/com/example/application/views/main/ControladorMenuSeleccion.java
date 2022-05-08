@@ -1,10 +1,13 @@
 package com.example.application.views.main;
 
+import com.example.application.views.main.BaseVehiculos.VehiculoDescripcion;
+import com.vaadin.flow.component.HasValue.ValueChangeEvent;
+
 import org.hibernate.validator.spi.nodenameprovider.Property;
 
 public class ControladorMenuSeleccion extends Controlador   
     implements   
-    Property.ValueChangeListener {   
+     {   
   private static final long serialVersionUID = 1L;   
    
   public ControladorMenuSeleccion(BaseVehiculos modelo) {   
@@ -13,7 +16,7 @@ public class ControladorMenuSeleccion extends Controlador
   }   
    
   public void valueChange(ValueChangeEvent event) {   
-    BaseVehiculos.VehiculoDescription nuevaDescripcion =   
+    VehiculoDescripcion nuevaDescripcion =   
         (BaseVehiculos.VehiculoDescripcion) event   
             .getProperty().getValue();   
     if (nuevaDescripcion != null)   

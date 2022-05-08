@@ -32,4 +32,10 @@ public class MainView extends VerticalLayout implements Observador{
       )
     );
   }
+
+  @Override
+  public void actualiza() {
+    // TODO Auto-generated method stub
+    
+  }
 }

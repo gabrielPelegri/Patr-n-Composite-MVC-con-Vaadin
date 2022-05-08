@@ -1,7 +1,10 @@
 package com.example.application.views.main;
+
+import com.vaadin.flow.component.ClickEvent;
+
 public class ControladorBotonAnuncioSiguiente extends   
     Controlador implements   
-    ClickListener, Observador {   
+    OnClickListener, Observador {   
   private static final long serialVersionUID = 1L;   
   protected int indiceAnuncioEnCurso;   
   protected int numAnuncios;   
@@ -23,7 +26,7 @@ public class ControladorBotonAnuncioSiguiente extends
   }   
    
   public void actualiza() {   
-    numAnuncios = modelo.getNumAnucios();   
+    numAnuncios = modelo.getNumAnuncios();   
     indiceAnuncioEnCurso = 0;   
     vista.muestraAnuncio(indiceAnuncioEnCurso);   
   }   
